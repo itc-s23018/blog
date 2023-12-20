@@ -1,6 +1,7 @@
 import Container from 'components/container'
 import Hero from 'components/hero'
 import PostBody from 'components/post-body'
+import Contact from 'components/contact'
 
 const About = () => {
   const props = { title: 'About', subtitle: 'About development activities' }
@@ -34,6 +35,7 @@ const About = () => {
           公開リポジトリを活用すると、全世界のどこからでもアクセスし、開発者が関連するプロジェクトのタスクを利用することができます。
         </p>
       </PostBody>
+      <Contact />
     </Container>
   )
 }
