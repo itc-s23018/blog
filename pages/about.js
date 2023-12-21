@@ -22,6 +22,11 @@ const About = () => {
         layout='responsive'
         width={1152}
         height={100}
+        sizes='100vw'
+        style={{
+          width: '100%',
+          height: 'auto'
+        }}
         priority
         placeholder='blur'
       />
@@ -63,5 +68,4 @@ const About = () => {
     </Container>
   )
 }
-
 export default About
