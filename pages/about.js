@@ -7,12 +7,30 @@ import {
   TwoColumnMain,
   TwoColumnSidebar
 } from 'components/two-column'
+import Image from 'next/image'
+import eyecatch from '../next/image/about.jpg'
 
 const About = () => {
   const props = { title: 'About', subtitle: 'About development activities' }
   return (
     <Container>
       <Hero {...props} />
+
+      <Image
+        src={eyecatch}
+        alt='アバウトページの画像'
+        layout='responsive'
+        width={1152}
+        height={100}
+        sizes='100vw'
+        style={{
+          width: '100%',
+          height: 'auto'
+        }}
+        priority
+        placeholder='blur'
+      />
+
       <TwoColumn>
         <TwoColumnMain>
           <PostBody>
@@ -50,5 +68,4 @@ const About = () => {
     </Container>
   )
 }
-
 export default About
