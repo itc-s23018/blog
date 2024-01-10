@@ -2,7 +2,7 @@ import { client } from 'lib/api'
 export default function Schedule () {
   return <h1>記事のタイトル</h1>
 }
-export async function getStaticProps () {
+const getStaticProps = async () => {
   const resPromise = client.get({
     endpoint: 'blogs'
   })
@@ -18,3 +18,4 @@ export async function getStaticProps () {
     props: {}
   }
 }
+export { getStaticProps }
