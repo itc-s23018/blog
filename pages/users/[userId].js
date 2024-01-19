@@ -3,12 +3,10 @@ import Container from 'components/container'
 import Hero from 'components/hero'
 
 const User = ({ user }) => {
-  const props = { title: 'UserList' }
-
   return (
     <Container>
       <Meta pageTitle='ユーザーネーム' />
-      <Hero {...props} />
+      <Hero />
       <div>
         <h1>ID: {user.id}</h1>
         <h1>Name: {user.name}</h1>
