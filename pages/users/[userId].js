@@ -1,6 +1,7 @@
 import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
+import Pagination from 'components/pagination'
 
 const User = ({ user }) => {
   return (
@@ -10,6 +11,7 @@ const User = ({ user }) => {
       <div>
         <h1>ID: {user.id}</h1>
         <h1>Name: {user.name}</h1>
+        <Pagination prevUrl='/users' prevText='ユーザーリストに戻る' />
         <br />
       </div>
     </Container>
